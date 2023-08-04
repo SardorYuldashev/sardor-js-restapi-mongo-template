@@ -1,0 +1,49 @@
+### User qo'shish
+POST http://localhost:3000/users
+Authorization: 
+Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "",
+  "username": "",
+  "password": ""
+}
+
+
+### Login qilish
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "",
+  "password": ""
+}
+
+
+### Userlar ro'yxati
+GET http://localhost:3000/users
+Authorization: 
+
+
+### Bitta userni ko'rish
+GET http://localhost:3000/users/:id
+Authorization: 
+
+
+### Edit user
+PATCH http://localhost:3000/users/:id
+Authorization: 
+Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "",
+  "username": "",
+  "password": ""
+}
+
+
+### Userni o'chirish
+DELETE http://localhost:3000/users/:id
+Authorization:
